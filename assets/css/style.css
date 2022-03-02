@@ -45,3 +45,12 @@ li a:visited {
     margin-right: auto;
     padding: 1rem;
 }
+
+.score {
+    display: flex;
+    justify-content: end;
+}
+
+.bulls, .cows {
+    
+}
