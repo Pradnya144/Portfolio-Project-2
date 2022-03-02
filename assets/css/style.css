@@ -16,6 +16,15 @@ body {
 
 /* header */
 .heading {
-    margin: 1rem;
+    padding: 3rem;
     font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    padding: 2rem 2rem;
+    font-weight: bolder;
+    list-style: none;
 }
