@@ -36,3 +36,12 @@ li a {
 li a:visited {
     color: #234F1E;
 }
+
+/* game play */
+.game-area {
+    width: 50%;
+    border: #466D1D 0.4rem groove;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
