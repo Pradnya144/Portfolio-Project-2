@@ -17,7 +17,32 @@
     </div>
     <div class="rules">
         <p>
-            
+            The player gets 7 turns to guess the orrect number.
+            Each guess made by the player is evaluated and the number or bulls or cows is displayed.
+            By the number of bulls and cows a player should be able to guess the correct number
+            after a few attempts.
+            Each digit can have the value ranging from 0-9 and no digit is repeated in the number.
+        </p>
+
+        <p>
+            A bull indicates that the digit guessed by the player is correct and
+            in the correct position comparing with the computer generated number.
+            Whereas a cow indicates that the digit guessed by the player is correct
+            but not in the correct position comparing with the computer generated number.
+
+            For instance the generated number is 2854
+            Player guesses the number as 5836
+
+            This would result in Bulls - 1 and Cows - 1
+            Since the digit 8 is correct and also in the correct position this gives a bulls score.
+            Since the digit 5 is correct but is not in the correct position this gives a cows score.
+
+            Lets look at the score of a different guess for even more clarity.
+
+            Player guesses the number 4853
+
+            Since the digits 8 and 5 are now in correct position this gives Bulls - 2
+            Since the digit 4 is correct but not yet in the correct position this gives Cows - 1
         </p>
     </div>
 </body>
