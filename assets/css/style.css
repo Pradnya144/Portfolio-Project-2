@@ -76,3 +76,15 @@ input {
     color: azure;
     background-color: #03C04A;
 }
+
+/* instructions */
+.rules {
+    width: 50%;
+    border: #466D1D 0.4rem groove;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    background-color: #e8f4ea;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
