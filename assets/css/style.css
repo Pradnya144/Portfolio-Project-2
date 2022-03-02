@@ -13,3 +13,9 @@ body {
     text-align: center;
     color: #234F1E;
 }
+
+/* header */
+.heading {
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
