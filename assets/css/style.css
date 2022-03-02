@@ -39,7 +39,7 @@ li a:visited {
 
 /* game play */
 .game-area {
-    width: 50%;
+    width: 60%;
     border: #466D1D 0.4rem groove;
     margin-left: auto;
     margin-right: auto;
@@ -67,4 +67,12 @@ input {
     text-align: center;
     padding: 0.2rem;
     font-size: 1rem;
+}
+
+.block button {
+    height: 1.7rem;
+    width: 40px;
+    font-size: medium;
+    color: azure;
+    background-color: #03C04A;
 }
