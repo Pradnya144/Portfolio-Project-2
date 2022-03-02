@@ -57,3 +57,14 @@ li a:visited {
     font-weight: 500;
     padding: 1rem 3.7rem 0.5rem;
 }
+
+.block {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+input {
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
