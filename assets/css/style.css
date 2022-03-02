@@ -88,3 +88,12 @@ input {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
 }
+
+.rules a {
+    color: #234F1E;
+}
+
+.rules a:hover {
+    text-decoration: none;
+    color: #03C04A;
+}
