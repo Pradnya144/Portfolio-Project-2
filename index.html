@@ -35,82 +35,46 @@
 
     <!-- Game area-->
     <div class="game-area">
-        <div class="answer">
-            <h2>Computer has selected a number</h2>
-            <span id="reveal-answer"></span>
-        </div>
-        
-        <div class="score">
-            <span class="bulls">BULLS</span>
-            <span class="cows">COWS</span>
-        </div>
-
-        <div class="user-guess">
-            <div class="block">1
-                <input type="number" min="0" max="9" name="num1">
-                <input type="number" min="0" max="9" name="num2">
-                <input type="number" min="0" max="9" name="num3">
-                <input type="number" min="0" max="9" name="num4">
-                <button type="button">Ok</button>
-                <span class="bulls">0</span>
-                <span class="cows">0</span>
+        <form method="POST">
+            <div class="answer">
+                <h2>Computer has selected a number</h2>
+                <span id="reveal-answer"></span>
             </div>
-            <div class="block">2
-                <input type="number" min="0" max="9" name="num1">
-                <input type="number" min="0" max="9" name="num2">
-                <input type="number" min="0" max="9" name="num3">
-                <input type="number" min="0" max="9" name="num4">
-                <button type="button">Ok</button>
-                <span class="bulls">0</span>
-                <span class="cows">0</span>
-            </div>
-            <div class="block">3
-                <input type="number" min="0" max="9" name="num1">
-                <input type="number" min="0" max="9" name="num2">
-                <input type="number" min="0" max="9" name="num3">
-                <input type="number" min="0" max="9" name="num4">
-                <button type="button">Ok</button>
-                <span class="bulls">0</span>
-                <span class="cows">0</span>
-            </div>
-            <div class="block">4
-                <input type="number" min="0" max="9" name="num1">
-                <input type="number" min="0" max="9" name="num2">
-                <input type="number" min="0" max="9" name="num3">
-                <input type="number" min="0" max="9" name="num4">
-                <button type="button">Ok</button>
-                <span class="bulls">0</span>
-                <span class="cows">0</span>
-            </div>
-            <div class="block">5
-                <input type="number" min="0" max="9" name="num1">
-                <input type="number" min="0" max="9" name="num2">
-                <input type="number" min="0" max="9" name="num3">
-                <input type="number" min="0" max="9" name="num4">
-                <button type="button">Ok</button>
-                <span class="bulls">0</span>
-                <span class="cows">0</span>
-            </div>
-            <div class="block">6
-                <input type="number" min="0" max="9" name="num1">
-                <input type="number" min="0" max="9" name="num2">
-                <input type="number" min="0" max="9" name="num3">
-                <input type="number" min="0" max="9" name="num4">
-                <button type="button">Ok</button>
-                <span class="bulls">0</span>
-                <span class="cows">0</span>
-            </div>
-            <div class="block">7
-                <input type="number" min="0" max="9" name="num1">
-                <input type="number" min="0" max="9" name="num2">
-                <input type="number" min="0" max="9" name="num3">
-                <input type="number" min="0" max="9" name="num4">
-                <button type="button">Ok</button>
-                <span class="bulls">0</span>
-                <span class="cows">0</span>
-            </div>
-                
-        </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="bulls">BULLS</td>
+                        <td class="cows">COWS</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td><input type="number" min="0" max="9" name="num1"></td>
+                        <td><input type="number" min="0" max="9" name="num2"></td>
+                        <td><input type="number" min="0" max="9" name="num3"></td>
+                        <td><input type="number" min="0" max="9" name="num4"></td>
+                        <td><button type="button">Ok</button></td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
     </div>
 
     
