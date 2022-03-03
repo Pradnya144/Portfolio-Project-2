@@ -50,12 +50,7 @@ li a:visited {
 .bulls, .cows {
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 0.3rem 3.7rem;
-}
-
-.block {
-    font-size: 1.3rem;
-    font-weight: 500;
+    padding: 0.3rem 2.5rem;
 }
 
 input {
@@ -64,7 +59,7 @@ input {
     font-size: 1rem;
 }
 
-.block button {
+table button {
     height: 1.7rem;
     width: 40px;
     font-size: medium;
