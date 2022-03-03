@@ -67,6 +67,13 @@ table button {
     background-color: #03C04A;
 }
 
+button {
+    height: 1.7rem;
+    width: 100px;
+    font-size: medium;
+    color: azure;
+    background-color: #03C04A;
+}
 /* instructions */
 .rules {
     width: 50%;
