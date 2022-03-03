@@ -47,15 +47,11 @@ li a:visited {
     background-color: #e8f4ea;
 }
 
-.score {
-    display: flex;
-    justify-content: end;
-}
 
 .bulls, .cows {
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 1rem 3.7rem 0.5rem;
+    padding: 0.3rem 3.7rem;
 }
 
 .block {
