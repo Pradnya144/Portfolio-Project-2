@@ -115,3 +115,17 @@ I have used a basic microsoft word document to create a mock up for the game lay
     * The css file was passed through https://beautifier.io/ for a consistent formatting throughout the code.  
 
 
+## Testing  
+
+Since the website is built with HTML and CSS and JavaScript, I have made use of the [W3C Markup Validation Service](https://validator.w3.org/) and [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator.html.en) to validate HTML and CSS syntax in this project.  
+Both tests **Pass**  
+
+### Lighthouse Testing  
+
+### Test Cases
+
+| ID | Test Name | Steps | Expected Outcome | Result |  
+|----|-----------|-----|----------|----|  
+| T01 | Navigation-Clickable | Click on the "HOW TO PLAY" | The link redirects to the correct page when clicked | Pass |  
+| T02 | Navigation-Clickable | Click on the "click here to start playing" link | This shhould redirect back to the main game page | Pass |  
+| T15 | UX- Responsiveness | Repeat all the above tests for desktops, tablets and smartphone sizes | Screen should re-size so that text remains visible and all the items on the screen should position appropriately | Pass |  
