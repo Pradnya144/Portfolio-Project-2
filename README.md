@@ -149,6 +149,22 @@ The website was viewed on
 ### Known Bugs  
 
 
+## Deployment
+
+### Github Pages
+
+This project was developed using the Gitpod IDE and pushed to a Github repository with the use of Git version control.
+The project was deployed to GitHub Pages using the following steps.  
+1. Login to Github and open the Github Repository.  
+2. Within the Repository click on "Settings" from the top menu.  
+3. Go to the "Pages" section.  
+4. Under the Sources click the dropdown displaying None and select the branch to be deployed ("Main").  
+5. Click on the "Save" button.  
+6. Deployed link is now generated at the top.  
+
+The website can directly be viewed using this link now.  
+
+
 
 
 
