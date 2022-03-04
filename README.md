@@ -53,4 +53,14 @@ More setting options and personilization for player can be added to the game.
 Considering this being a logical game, I have kept the colour scheme quite neutral. I have chosen shades of green to keep the website soothing on the eyes. I have chosen shades of green off different palettes that I think would go together.  
 I have used https://coolors.co/ to generate the palette.  
   
-![color palette](README-docs/) 
+![color palette](README-docs/)  
+
+### Font  
+
+
+
+### Wireframe  
+
+I have used a basic microsoft word document to create a mock up for the game layout.  The mock up helped in designing the layout of the webpage and colour theme.  
+
+![First page wireframe](README-docs/)  
