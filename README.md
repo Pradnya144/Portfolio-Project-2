@@ -64,3 +64,32 @@ I have used https://coolors.co/ to generate the palette.
 I have used a basic microsoft word document to create a mock up for the game layout.  The mock up helped in designing the layout of the webpage and colour theme.  
 
 ![First page wireframe](README-docs/)  
+
+## Features  
+
+1. The name of the game is visible on both the pages and has a maintained style throughout.  
+    * The name of the game is big and clearly visible.  
+    * There is one clickable link for "HOW TO PLAY" page on the menu board.  
+    * The main page also displayes the players wins and the timer for each round of the game.  
+
+![website header](README-docs/)  
+
+2. The main page contains the game area with which the player interacts.  
+    * The hero imaage is chosen appropriate to the aquarium theme and covers all of the page.
+    * There is a section which contains the computers generated number which is kept hidden.  
+    * There is and input area where the player can input their guess.  
+    * An "OK" button which triggers the user input and answer comparison and generates and displays the bulls and cows score.  
+    * For each chance the user fails to guess the correct number, a new input field is added below.  
+    * The player has the option of 'Quitting' the game or also selecting a 'New game'.  
+
+![hero page body](README-docs/)  
+
+3. The game play instructions page is a clickable link "HOW TO PLAY?"  
+    * The style and colour scheme on this page is consistent with the main game play page.  
+    * This page contains text for instructions on how to play the game.  
+    * There are examples given for better understanding of the game.  
+    * There is a link present to go back to the game page and start playing the game.  
+
+![hero page body](README-docs/)  
+
+
