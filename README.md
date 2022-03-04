@@ -146,4 +146,9 @@ The website was viewed on
 * iPhone SE
 * iPad Air 2020  
 
+### Known Bugs  
+
+
+
+
 
