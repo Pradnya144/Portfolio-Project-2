@@ -179,6 +179,19 @@ git commit -m "commit message"
 git push  
 ````  
 
+### Cloning Github Repository
+
+ For creating a clone of this repository follow the below steps.  
+1. Login to Github and open the Github Repository.  
+2. Click on the Code dropdown above the file list.  
+3. Copy the https link shown in the https section.  
+4. Open your local terminal/command prompt where git is installed.  
+5. Navigate to the location where you want to clone the repository.  
+6. Type the command   
+     ````
+    git clone https://github.com/Pradnya144/Portfolio-Project-1.git
+    ````   
+The repository is cloned and ready to use.  
 
 
 
