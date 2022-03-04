@@ -32,6 +32,7 @@ User stories were created to help guide the design and implementation phases of 
      * I want to be able to directly start playing the game.  
      * I want to interface to be simple and clear as should be for a logical game.  
 
+
 ### Structure
 
 The game interface consists of 2 pages.
@@ -45,4 +46,11 @@ More difficulty levels and complexities can be added to the game play, challengi
 More setting options and personilization for player can be added to the game.  
 
 
- 
+## Design
+
+### Colour  
+
+Considering this being a logical game, I have kept the colour scheme quite neutral. I have chosen shades of green to keep the website soothing on the eyes. I have chosen shades of green off different palettes that I think would go together.  
+I have used https://coolors.co/ to generate the palette.  
+  
+![color palette](README-docs/) 
