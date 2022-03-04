@@ -194,5 +194,8 @@ git push
 The repository is cloned and ready to use.  
 
 
+## Acknowledgements & Credits
 
-
+I have looked at a lot of html and css on [W3School](https://www.w3schools.com/) especially the for the parallax scrolling effect on the main page.  
+I have looked at a lot of questions and suggestions on [stackoverflow](https://stackoverflow.com/) especially for linking my thank you page after submitting the form.  
+My mentor Brian Macharia, has given me valuable feedback and input during every stage of development of this project.  
