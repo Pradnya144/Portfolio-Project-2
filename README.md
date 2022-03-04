@@ -31,4 +31,12 @@ User stories were created to help guide the design and implementation phases of 
    * As a player who has played this game before:  
      * I want to be able to directly start playing the game.  
      * I want to interface to be simple and clear as should be for a logical game.  
+
+### Structure
+
+The game interface consists of 2 pages.
+
+* A landing page or the main game page having the main game area where user enters inputs and sees reults, a timer and winstreak. Also a tab to view the instructions.  
+* An instructions page having the rules of the game with examples.  
+
  
