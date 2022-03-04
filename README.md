@@ -93,3 +93,13 @@ I have used a basic microsoft word document to create a mock up for the game lay
 ![hero page body](README-docs/)  
 
 
+## Technologies  
+
+### Languages used  
+
+* JavaScript  
+* HTML5  
+* CSS3  
+
+
+
