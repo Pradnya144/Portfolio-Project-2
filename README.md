@@ -101,5 +101,17 @@ I have used a basic microsoft word document to create a mock up for the game lay
 * HTML5  
 * CSS3  
 
+### Frameworks, Libraries and Programs used
+
+1. Google Fonts:  
+    * Google fonts import statements were used as part of this project to make use of the fonts which are used on all pages of the website.  
+2. Font Awesome:  
+    * Font Awesome was used on all pages of the website to add social media icons.  
+3. Gitpod:  
+    * Gitpod IDE was used for writing and editing code and version control.  
+4. GitHub:  
+    * GitHub is used to store the projects code after being pushed from Git.  
+5. Formatting:  
+    * The css file was passed through https://beautifier.io/ for a consistent formatting throughout the code.  
 
 
