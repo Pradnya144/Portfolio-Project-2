@@ -164,6 +164,21 @@ The project was deployed to GitHub Pages using the following steps.
 
 The website can directly be viewed using this link now.  
 
+### Forking Github Repository
+
+To make a copy of the original repository to make changes to it without affecting the original repository follow the below steps.  
+1. Login to Github and open the Github Repository.    
+2. Within the Repository click on the "Fork" at the right top corner.   
+
+This would have created the same repository in your account.  
+
+Make changes to the project and push those changes back to Github using the below commands.  
+````
+git add .  
+git commit -m "commit message"  
+git push  
+````  
+
 
 
 
