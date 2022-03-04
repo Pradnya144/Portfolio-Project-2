@@ -39,4 +39,10 @@ The game interface consists of 2 pages.
 * A landing page or the main game page having the main game area where user enters inputs and sees reults, a timer and winstreak. Also a tab to view the instructions.  
 * An instructions page having the rules of the game with examples.  
 
+### Future Advancements  
+
+More difficulty levels and complexities can be added to the game play, challenging the player even more.   
+More setting options and personilization for player can be added to the game.  
+
+
  
