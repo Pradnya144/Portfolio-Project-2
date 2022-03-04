@@ -129,3 +129,21 @@ Both tests **Pass**
 | T01 | Navigation-Clickable | Click on the "HOW TO PLAY" | The link redirects to the correct page when clicked | Pass |  
 | T02 | Navigation-Clickable | Click on the "click here to start playing" link | This shhould redirect back to the main game page | Pass |  
 | T15 | UX- Responsiveness | Repeat all the above tests for desktops, tablets and smartphone sizes | Screen should re-size so that text remains visible and all the items on the screen should position appropriately | Pass |  
+
+### Browser Testing  
+
+The website was viewed on
+* Google Chrome  
+* Microsoft Edge  
+* Mozilla Firefox  
+* Safari  
+
+### Smartphone, Tablet Testing  
+
+The website was viewed on  
+* Samsung Galaxy A70  
+* Samsung Galaxy A7
+* iPhone SE
+* iPad Air 2020  
+
+
