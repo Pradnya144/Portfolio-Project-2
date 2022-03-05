@@ -1,13 +1,13 @@
 //global objects
 var attempt = 0;
-
+timer();
 // Event listeners for buttons
 
 let buttons = document.getElementsByTagName("button");
 
 for(let button of buttons) {
     button.addEventListener("click", function() {
-        if(this.getAttribute("class") === "ok") {
+        if(this.getAttribute("class") === "validate") {
             checkAnswer();
         } 
         if(this.getAttribute("id") === "quit") {
@@ -79,7 +79,8 @@ ans = generateNumber();
          }
          attempt++;
          if(bullcount === 4) {
-             console.log("Congratulations!");
+             let winnerMessage = `You took ${minutes.textContent}:${seconds.textContent} to guess the correct number`;
+             alert(winnerMessage);
          } else {
              console.log(bullcount, cowcount);
              document.getElementsByClassName("bulls")[attempt].innerHTML = bullcount;
@@ -111,7 +112,7 @@ ans = generateNumber();
                  cell2.setAttribute("class","active");
                  var btn= document.createElement("button");
                  btn.setAttribute("type","button");
-                 btn.setAttribute("class","ok");
+                 btn.setAttribute("class","validate");
                  btn.setAttribute("onclick","checkAnswer()");
                  btn.innerHTML = "Ok";
                  cell3.appendChild(btn);
@@ -146,3 +147,29 @@ ans = generateNumber();
      }
 
  }
+
+/**
+ * Displays the lapsed time
+ */
+
+ const seconds = document.getElementById("seconds");
+ const minutes = document.getElementById("minutes");
+ let secondsTime = 0;
+ let minutesTime = 0;
+
+ function timer() {
+  interval = setInterval(function () {
+    secondsTime++;
+    seconds.textContent = (("0" + secondsTime).slice(-2)).toString();
+    minutes.textContent = (("0" + minutesTime).slice(-2)).toString();
+    if (secondsTime === 60) {
+      secondsTime = 0;
+      seconds.textContent = (("0" + secondsTime).slice(-2)).toString();
+      minutesTime++;
+      minutes.textContent = (("0" + minutesTime).slice(-2)).toString();
+    }
+    if ((secondsTime === 59) && (minutesTime === 59)) {
+      clearInterval(intervalCount);
+    }
+  }, 1000);
+}
