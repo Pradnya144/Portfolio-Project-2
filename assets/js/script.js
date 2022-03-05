@@ -1,3 +1,20 @@
+// Event listeners for buttons
+
+let buttons = document.getElementsByTagName("button");
+
+for(let button of buttons) {
+    button.addEventListener("click", function() {
+        if(this.getAttribute("class") === "ok") {
+            checkAnswer();
+        } 
+        if(this.getAttribute("id") === "quit") {
+            //placeholder for call show answer function
+        } else {
+            generateNumber();
+        }
+    })
+}
+
 
 /**
  * Generate a random digit between 0-9
@@ -29,3 +46,11 @@ function generateNumber() {
     var ans = [num1, num2, num3, num4];
     return ans;
 }
+
+/**
+ * function to check number of bulls and cows
+ */
+
+ function checkAnswer() {
+
+ }
