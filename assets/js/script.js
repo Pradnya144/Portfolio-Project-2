@@ -207,6 +207,13 @@ function newGame() {
     secondsTime = 0;
     minutesTime = 0;
     generateNumber();
-    timer();
-    document.getElementById("user-guess").childNodes[0];
+    var node = document.getElementsByTagName("tr");
+    var table = document.getElementsByTagName("tbody");
+    var userInput =  document.getElementsByClassName("user-input");
+    //reset value in input field
+    userInput[0].value = '';
+    //remove new rows
+    while(node.length > 4){
+        table.removeChild(table.lastChild);
+    }
 }
