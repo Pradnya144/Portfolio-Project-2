@@ -37,10 +37,10 @@
     <div class="game-area">
         <form method="POST">
             <div class="answer">
-                <h2>Computer has selected a number</h2>
+                <h2 id="lost">Computer has selected a number</h2>
                 <span id="reveal-answer">0</span>
             </div>
-            <table class="user-guess">
+            <table id="user-guess">
                 <tbody>
                     <tr>
                         <td></td>
@@ -57,7 +57,7 @@
                     </tr>
                     <tr>
                         <td>1.</td>
-                        <td><input type="number" min="0" max="9" name="num1" class="user-input"></td>
+                        <td><input type="number" min="0" max="9" class="user-input"></td>
                         <td><button type="button" class="ok">Ok</button></td>
                         <td class="bulls">0</td>
                         <td class="cows">0</td>
