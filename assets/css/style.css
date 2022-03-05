@@ -103,6 +103,16 @@ button {
     color: #03C04A;
 }
 
+footer {
+    margin-bottom: .2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
 /* media queries for screen size 700 and down*/
 
 @media screen and (max-width: 700px) {
