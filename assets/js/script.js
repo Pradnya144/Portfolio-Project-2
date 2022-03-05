@@ -155,12 +155,6 @@ ans = generateNumber();
      var rowCount = document.getElementsByClassName("guess");
      var table = document.getElementById("user-guess");
 
-     /*
-     while(rowCount.length > 2) {
-         table.removeChild(table.lastChild);
-     }
-     */
-
  }
 
 /**
@@ -206,18 +200,17 @@ function newGame() {
     
     secondsTime = 0;
     minutesTime = 0;
-    generateNumber();
     var node = document.getElementsByTagName("tr");
-    var table = document.getElementById("user-guess");
     var count = node.length;
-    console.log(count);
     var userInput =  document.getElementsByClassName("user-input");
     //reset value in input field
     userInput[0].value = '';
+    //reset value in bulls and cows
+    document.getElementsByClassName("bulls")[1].innerHTML = 0;
+    document.getElementsByClassName("cows")[1].innerHTML = 0;
     //remove new rows
-    for(var c = count; c > 2; c--){
-        document.getElementById("user-guess").deleteRow(count-2);
-        console.log("count "+count);
-        console.log("doc length "+ document.getElementsByClassName("user-input").length);
+    for(var c = count; c > 3; c--){
+        document.getElementById("user-guess").deleteRow(c-1);
     }
+    generateNumber();
 }
