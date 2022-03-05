@@ -208,12 +208,16 @@ function newGame() {
     minutesTime = 0;
     generateNumber();
     var node = document.getElementsByTagName("tr");
-    var table = document.getElementsByTagName("tbody");
+    var table = document.getElementById("user-guess");
+    var count = node.length;
+    console.log(count);
     var userInput =  document.getElementsByClassName("user-input");
     //reset value in input field
     userInput[0].value = '';
     //remove new rows
-    while(node.length > 4){
-        table.removeChild(table.lastChild);
+    for(var c = count; c > 2; c--){
+        document.getElementById("user-guess").deleteRow(count-2);
+        console.log("count "+count);
+        console.log("doc length "+ document.getElementsByClassName("user-input").length);
     }
 }
