@@ -1,8 +1,7 @@
 //global objects
 var attempt = 0;
-timer();
 // Event listeners for buttons
-
+document.addEventListener("DOMContentLoaded", function () {
 let buttons = document.getElementsByTagName("button");
 
 for(let button of buttons) {
@@ -12,12 +11,17 @@ for(let button of buttons) {
         } 
         if(this.getAttribute("id") === "quit") {
             playerQuits();
-        } else {
+        }
+        if(this.getAttribute("id" === "new-game")) {
+            newGame();
+        }else {
             generateNumber();
         }
     })
 }
-
+timer();
+}
+)
 
 /**
  * Generate a random digit between 0-9
@@ -46,8 +50,12 @@ function generateNumber() {
             break;
         }
     }
+    document.getElementById("lost").innerHTML = "Computer has selected a number"
+    document.getElementById("reveal-answer").innerHTML = ' ';
     var ans = [num1, num2, num3, num4];
     return ans;
+    
+
 }
 
 ans = generateNumber();
@@ -79,8 +87,10 @@ ans = generateNumber();
          }
          attempt++;
          if(bullcount === 4) {
-             let winnerMessage = `You took ${minutes.textContent}:${seconds.textContent} to guess the correct number`;
+             let winnerMessage = `You took ${minutes.textContent}:${seconds.textContent} to guess the correct number. Press the new game button to play again`;
              alert(winnerMessage);
+             incrementScore();
+             timer();
          } else {
              console.log(bullcount, cowcount);
              document.getElementsByClassName("bulls")[attempt].innerHTML = bullcount;
@@ -88,6 +98,7 @@ ans = generateNumber();
              if(attempt === 7) {
                  document.getElementById("lost").innerHTML = "You Lost! Computer had chosen the number"
                  document.getElementById("reveal-answer").innerHTML = ans;
+                 document.getElementById("total-wins").innerText = 0;
              } else {
                  //var parent = document.getElementsByClassName("active");
                  //parent[0].innerHTML = userInput[0].value;
@@ -136,15 +147,19 @@ ans = generateNumber();
 
  function playerQuits() {
 
-     document.getElementById("lost").innerHTML = "You Lost! Computer had chosen the number"
+     document.getElementById("lost").innerHTML = "You Lost! The correct answer was"
      document.getElementById("reveal-answer").innerHTML = ans;
+
+     document.getElementById("total-wins").innerText = 0;
 
      var rowCount = document.getElementsByClassName("guess");
      var table = document.getElementById("user-guess");
 
+     /*
      while(rowCount.length > 2) {
          table.removeChild(table.lastChild);
      }
+     */
 
  }
 
@@ -172,4 +187,26 @@ ans = generateNumber();
       clearInterval(intervalCount);
     }
   }, 1000);
+}
+
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById("total-wins").innerText);
+    document.getElementById("total-wins").innerText = ++oldScore;
+
+}
+
+/**
+ * Function to start a new game
+ */
+function newGame() {
+    
+    secondsTime = 0;
+    minutesTime = 0;
+    generateNumber();
+    timer();
+    document.getElementById("user-guess").childNodes[0];
 }
