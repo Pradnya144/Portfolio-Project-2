@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
 }
+
 html {
     min-height: 100%;
 }
@@ -33,6 +34,7 @@ li a {
     text-decoration: none;
     color: #234F1E;
 }
+
 li a:visited {
     color: #234F1E;
 }
@@ -45,6 +47,11 @@ li a:visited {
     margin-right: auto;
     padding: 1rem;
     background-color: #e8f4ea;
+}
+
+#user-guess {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bulls, .cows {
@@ -94,4 +101,24 @@ button {
 .rules a:hover {
     text-decoration: none;
     color: #03C04A;
+}
+
+/* media queries for screen size 700 and down*/
+
+@media screen and (max-width: 700px) {
+
+    .game-area {
+        width: 70%;
+    }
+    
+    .bulls, .cows {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.3rem 1.2rem;
+    }
+    
+    input {
+        width: 3rem;
+    }
+
 }
