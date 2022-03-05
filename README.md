@@ -4,6 +4,8 @@ Bulls and Cows is an ancient logical game. The game logic is developed using Jav
 
 [View deployed site here](https://pradnya144.github.io/Portfolio-Project-2/)   
 
+![mockup](README-docs/mockup.jpg)  
+
 
 ## Table of Contents  
 
@@ -104,14 +106,12 @@ I have used a basic microsoft word document to create a mock up for the game lay
 ### Frameworks, Libraries and Programs used
 
 1. Google Fonts:  
-    * Google fonts import statements were used as part of this project to make use of the fonts which are used on all pages of the website.  
-2. Font Awesome:  
-    * Font Awesome was used on all pages of the website to add social media icons.  
-3. Gitpod:  
+    * Google fonts import statements were used as part of this project to make use of the fonts which are used on all pages of the website.   
+2. Gitpod:  
     * Gitpod IDE was used for writing and editing code and version control.  
-4. GitHub:  
+3. GitHub:  
     * GitHub is used to store the projects code after being pushed from Git.  
-5. Formatting:  
+4. Formatting:  
     * The css file was passed through https://beautifier.io/ for a consistent formatting throughout the code.  
 
 
