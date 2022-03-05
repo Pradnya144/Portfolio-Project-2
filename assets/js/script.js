@@ -11,7 +11,7 @@ for(let button of buttons) {
             checkAnswer();
         } 
         if(this.getAttribute("id") === "quit") {
-            //placeholder for call show answer function
+            playerQuits();
         } else {
             generateNumber();
         }
@@ -61,18 +61,18 @@ ans = generateNumber();
      var cowcount = 0;
      var userInput = document.getElementsByClassName("user-input");
      //check empty input
-     if(userInput[0].value.length < 4) {
+     if(userInput[attempt].value.length < 4) {
          alert("Please enter a 4 digit number");
      } 
      //check repeated digits
-     if((/([0-9]).*?\1/).test(userInput[0].value)) {
+     if((/([0-9]).*?\1/).test(userInput[attempt].value)) {
          alert("The digits in the number should not repeat!");
      } else {
          for(var n=0; n < 4; n++){
              for(var i=0; i < 4; i++) {
-                 if(userInput[0].value.charAt(i) === ans[n].toString() && i === n) {
+                 if(userInput[attempt].value.charAt(i) === ans[n].toString() && i === n) {
                      bullcount++;
-                 } else if(userInput[0].value.charAt(i) === ans[n].toString()) {
+                 } else if(userInput[attempt].value.charAt(i) === ans[n].toString()) {
                      cowcount++;
                  }
              }
@@ -88,13 +88,14 @@ ans = generateNumber();
                  document.getElementById("lost").innerHTML = "You Lost! Computer had chosen the number"
                  document.getElementById("reveal-answer").innerHTML = ans;
              } else {
-                 var parent = document.getElementsByClassName("active");
-                 parent[0].innerHTML = userInput[0].value;
-                 parent[1].innerHTML = '';
-                 parent[1].removeAttribute("class");
+                 //var parent = document.getElementsByClassName("active");
+                 //parent[0].innerHTML = userInput[0].value;
+                 //parent[1].innerHTML = '';
+                 //parent[1].removeAttribute("class");
                  var table = document.getElementById("user-guess");
                  var row = table.insertRow(attempt + 2);
                  row.setAttribute("id",attempt+1);
+                 row.setAttribute("class","guess");
                  var cell1 = row.insertCell(0);
                  var cell2 = row.insertCell(1);
                  var cell3 = row.insertCell(2);
@@ -121,8 +122,27 @@ ans = generateNumber();
              }
          }
      }
-     var child = document.getElementById(attempt).childNodes[3];
-     child.removeAttribute("class");
-     
+     //var child = document.getElementById(attempt).childNodes[3];
+     //child.removeAttribute("class");
+     return;
+
+ }
+
+ /**
+ * function to display computer answer
+ * when the player quits the game
+ */
+
+ function playerQuits() {
+
+     document.getElementById("lost").innerHTML = "You Lost! Computer had chosen the number"
+     document.getElementById("reveal-answer").innerHTML = ans;
+
+     var rowCount = document.getElementsByClassName("guess");
+     var table = document.getElementById("user-guess");
+
+     while(rowCount.length > 2) {
+         table.removeChild(table.lastChild);
+     }
 
  }
