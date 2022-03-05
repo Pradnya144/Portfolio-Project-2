@@ -2,7 +2,7 @@
 
 Bulls and Cows is an ancient logical game. The game logic is developed using JavaScript as part of Portfolio Project for Code Institute.  
 
-[View deployed site here]()  
+[View deployed site here](https://pradnya144.github.io/Portfolio-Project-2/)   
 
 
 ## Table of Contents  
