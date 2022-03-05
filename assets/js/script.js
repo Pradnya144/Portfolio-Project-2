@@ -88,8 +88,13 @@ ans = generateNumber();
                  document.getElementById("lost").innerHTML = "You Lost! Computer had chosen the number"
                  document.getElementById("reveal-answer").innerHTML = ans;
              } else {
+                 var parent = document.getElementsByClassName("active");
+                 parent[0].innerHTML = userInput[0].value;
+                 parent[1].innerHTML = '';
+                 parent[1].removeAttribute("class");
                  var table = document.getElementById("user-guess");
                  var row = table.insertRow(attempt + 2);
+                 row.setAttribute("id",attempt+1);
                  var cell1 = row.insertCell(0);
                  var cell2 = row.insertCell(1);
                  var cell3 = row.insertCell(2);
@@ -102,12 +107,22 @@ ans = generateNumber();
                  input.setAttribute("max",9);
                  input.setAttribute("class","user-input");
                  cell2.appendChild(input);
-                 var ok= document.createElement("button");
-                 ok.setAttribute("type","button");
-                 ok.setAttribute("Class","ok");
-                 cell3.appendChild(ok);
+                 cell2.setAttribute("class","active");
+                 var btn= document.createElement("button");
+                 btn.setAttribute("type","button");
+                 btn.setAttribute("class","ok");
+                 btn.setAttribute("onclick","checkAnswer()");
+                 btn.innerHTML = "Ok";
+                 cell3.appendChild(btn);
+                 cell3.setAttribute("class","active");
+                 cell4.setAttribute("class","bulls");
+                 cell5.setAttribute("class","cows");
+
              }
          }
      }
+     var child = document.getElementById(attempt).childNodes[3];
+     child.removeAttribute("class");
+     
 
  }
