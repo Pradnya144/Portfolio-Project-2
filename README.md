@@ -53,17 +53,17 @@ More setting options and personilization for player can be added to the game.
 Considering this being a logical game, I have kept the colour scheme quite neutral. I have chosen shades of green to keep the website soothing on the eyes. I have chosen shades of green off different palettes that I think would go together.  
 I have used https://coolors.co/ to generate the palette.  
   
-![color palette](README-docs/)  
+![color palette](README-docs/color-palette.jpg)  
 
 ### Font  
 
-
+I have used the default font in the browser and not modified it. I have used style like bold and weight to emphasise certain areas of the text.  
 
 ### Wireframe  
 
 I have used a basic microsoft word document to create a mock up for the game layout.  The mock up helped in designing the layout of the webpage and colour theme.  
 
-![First page wireframe](README-docs/)  
+![First page wireframe](README-docs/wireframe.jpg)  
 
 ## Features  
 
@@ -72,7 +72,7 @@ I have used a basic microsoft word document to create a mock up for the game lay
     * There is one clickable link for "HOW TO PLAY" page on the menu board.  
     * The main page also displayes the players wins and the timer for each round of the game.  
 
-![website header](README-docs/)  
+![website header](README-docs/logo-header.jpg)  
 
 2. The main page contains the game area with which the player interacts.  
     * The hero imaage is chosen appropriate to the aquarium theme and covers all of the page.
@@ -82,7 +82,7 @@ I have used a basic microsoft word document to create a mock up for the game lay
     * For each chance the user fails to guess the correct number, a new input field is added below.  
     * The player has the option of 'Quitting' the game or also selecting a 'New game'.  
 
-![hero page body](README-docs/)  
+![hero page body](README-docs/game-area.jpg)  
 
 3. The game play instructions page is a clickable link "HOW TO PLAY?"  
     * The style and colour scheme on this page is consistent with the main game play page.  
@@ -90,7 +90,7 @@ I have used a basic microsoft word document to create a mock up for the game lay
     * There are examples given for better understanding of the game.  
     * There is a link present to go back to the game page and start playing the game.  
 
-![hero page body](README-docs/)  
+![hero page body](README-docs/instructions.jpg)  
 
 
 ## Technologies  
