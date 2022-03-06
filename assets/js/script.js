@@ -11,9 +11,9 @@ for(let button of buttons) {
         if(this.getAttribute("class") === "validate") {
             checkAnswer();
         } 
-        if(this.getAttribute("id" === "new-game")) {
-            newGame();
-        }// else {
+        //if(this.getAttribute("id" === "new-game")) {
+        //    newGame();
+        //} else {
             // generateNumber();
         // }
     })
@@ -25,6 +25,11 @@ timer();
 
 let quitGame = document.getElementById("quit");
 quitGame.addEventListener("click", playerQuits);
+
+let game = document.getElementById("new-game");
+game.addEventListener("click", newGame);
+
+
 
 
 /**
