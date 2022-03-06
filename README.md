@@ -32,7 +32,7 @@ User stories were created to help guide the design and implementation phases of 
 * Seasoned Player Goals  
    * As a player who has played this game before:  
      * I want to be able to directly start playing the game.  
-     * I want to interface to be simple and clear as should be for a logical game.  
+     * I want the interface to be simple and clear as should be for a logical game.  
 
 
 ### Structure
