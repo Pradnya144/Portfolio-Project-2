@@ -122,13 +122,18 @@ Both tests **Pass**
 
 ### Lighthouse Testing  
 
+The result for lighthouse testing was as below.  
+
+![lighthouse](README-docs/lighthouse.jpg)  
+
 ### Test Cases
 
 | ID | Test Name | Steps | Expected Outcome | Result |  
 |----|-----------|-----|----------|----|  
 | T01 | Navigation-Clickable | Click on the "HOW TO PLAY" | The link redirects to the correct page when clicked | Pass |  
 | T02 | Navigation-Clickable | Click on the "click here to start playing" link | This shhould redirect back to the main game page | Pass |  
-| T15 | UX- Responsiveness | Repeat all the above tests for desktops, tablets and smartphone sizes | Screen should re-size so that text remains visible and all the items on the screen should position appropriately | Pass |  
+| T03 | UX- Responsiveness | Repeat all the above tests for desktops, tablets and smartphone sizes | Screen should re-size so that text remains visible and all the items on the screen should position appropriately | Pass |  
+| T04 | Game-logic | Enter value and compare with answer | The number of cows and bulls score displayed should be correct | Pass |  
 
 ### Browser Testing  
 
