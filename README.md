@@ -197,7 +197,7 @@ git push
 5. Navigate to the location where you want to clone the repository.  
 6. Type the command   
      ````
-    git clone https://github.com/Pradnya144/Portfolio-Project-1.git
+    git clone https://github.com/Pradnya144/Portfolio-Project-2.git  
     ````   
 The repository is cloned and ready to use.  
 
