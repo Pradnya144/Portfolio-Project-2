@@ -134,6 +134,7 @@ The result for lighthouse testing was as below.
 | T02 | Navigation-Clickable | Click on the "click here to start playing" link | This shhould redirect back to the main game page | Pass |  
 | T03 | UX- Responsiveness | Repeat all the above tests for desktops, tablets and smartphone sizes | Screen should re-size so that text remains visible and all the items on the screen should position appropriately | Pass |  
 | T04 | Game-logic | Enter value and compare with answer | The number of cows and bulls score displayed should be correct | Pass |  
+| T05 | Game-logic | Click new game to start playing again | The game board should reset to original | Pass |  
 
 ### Browser Testing  
 

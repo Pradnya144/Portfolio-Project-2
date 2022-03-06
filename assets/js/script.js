@@ -146,7 +146,6 @@ ans = generateNumber();
 
  function playerQuits() {
 
-    console.log("player quit")
     document.getElementById("lost").textContent = "You Lost! The correct answer was"
     console.log(ans)
     document.getElementById("reveal-answer").textContent = `${ans}`;
@@ -165,7 +164,7 @@ ans = generateNumber();
  let minutesTime = 0;
 
  function timer() {
-  interval = setInterval(function () {
+    interval = setInterval(function () {
     secondsTime++;
     seconds.textContent = (("0" + secondsTime).slice(-2)).toString();
     minutes.textContent = (("0" + minutesTime).slice(-2)).toString();
