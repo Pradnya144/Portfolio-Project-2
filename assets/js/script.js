@@ -204,7 +204,8 @@ function newGame() {
     var count = node.length;
     var userInput =  document.getElementsByClassName("user-input");
     //reset value in input field
-    userInput[0].value = '';
+    userInput[0].value = "";
+    userInput[0].focus();
     //reset value in bulls and cows
     document.getElementsByClassName("bulls")[1].innerHTML = 0;
     document.getElementsByClassName("cows")[1].innerHTML = 0;
