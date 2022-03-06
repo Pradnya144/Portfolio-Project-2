@@ -155,6 +155,7 @@ The website was viewed on
 ### Known Bugs  
 
 Even after quitting the game the user can still input values. I have not been able to restrict the user input after quitting the game.  
+The Alert message ok click, sometimes adds new rows in the middle of the game.  
 
 ## Deployment
 
