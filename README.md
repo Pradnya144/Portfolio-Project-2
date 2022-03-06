@@ -204,6 +204,7 @@ The repository is cloned and ready to use.
 
 ## Acknowledgements & Credits
 
-I have looked at a lot of html and css on [W3School](https://www.w3schools.com/) especially the for the parallax scrolling effect on the main page.  
-I have looked at a lot of questions and suggestions on [stackoverflow](https://stackoverflow.com/) especially for linking my thank you page after submitting the form.  
+I have looked at a lot javascript DOM methods examples on [W3School](https://www.w3schools.com/) for adding rows to the table, modifying text context and timer controls.  
+I have looked at a lot of questions and suggestions on [stackoverflow](https://stackoverflow.com/) for timer, adding rows and also clearing child nodes. 
+Ger, from tutor support has helped me identify the root cause of the issue with my empty input value on resetting the game and with correcting the eventlisteners.     
 My mentor Brian Macharia, has given me valuable feedback and input during every stage of development of this project.  
