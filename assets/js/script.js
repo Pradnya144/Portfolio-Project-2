@@ -2,6 +2,8 @@
 var attempt = 0;
 // Event listeners for buttons
 document.addEventListener("DOMContentLoaded", function () {
+
+generateNumber();
 let buttons = document.getElementsByTagName("button");
 
 for(let button of buttons) {
@@ -9,19 +11,21 @@ for(let button of buttons) {
         if(this.getAttribute("class") === "validate") {
             checkAnswer();
         } 
-        if(this.getAttribute("id") === "quit") {
-            playerQuits();
-        }
         if(this.getAttribute("id" === "new-game")) {
             newGame();
-        }else {
-            generateNumber();
-        }
+        }// else {
+            // generateNumber();
+        // }
     })
 }
+
 timer();
 }
 )
+
+let quitGame = document.getElementById("quit");
+quitGame.addEventListener("click", playerQuits);
+
 
 /**
  * Generate a random digit between 0-9
@@ -39,7 +43,6 @@ function randomDigit() {
  */
 
 function generateNumber() {
-
     var num1= randomDigit();
 
     for(let i; i=1; i++) {
@@ -68,6 +71,7 @@ ans = generateNumber();
      var bullcount = 0;
      var cowcount = 0;
      var userInput = document.getElementsByClassName("user-input");
+     console.log(userInput[attempt])
      //check empty input
      if(userInput[attempt].value.length < 4) {
          alert("Please enter a 4 digit number");
@@ -90,7 +94,6 @@ ans = generateNumber();
              let winnerMessage = `You took ${minutes.textContent}:${seconds.textContent} to guess the correct number. Press the new game button to play again`;
              alert(winnerMessage);
              incrementScore();
-             timer();
          } else {
              console.log(bullcount, cowcount);
              document.getElementsByClassName("bulls")[attempt].innerHTML = bullcount;
@@ -100,10 +103,7 @@ ans = generateNumber();
                  document.getElementById("reveal-answer").innerHTML = ans;
                  document.getElementById("total-wins").innerText = 0;
              } else {
-                 //var parent = document.getElementsByClassName("active");
-                 //parent[0].innerHTML = userInput[0].value;
-                 //parent[1].innerHTML = '';
-                 //parent[1].removeAttribute("class");
+                 
                  var table = document.getElementById("user-guess");
                  var row = table.insertRow(attempt + 2);
                  row.setAttribute("id",attempt+1);
@@ -134,8 +134,7 @@ ans = generateNumber();
              }
          }
      }
-     //var child = document.getElementById(attempt).childNodes[3];
-     //child.removeAttribute("class");
+     
      return;
 
  }
@@ -147,13 +146,12 @@ ans = generateNumber();
 
  function playerQuits() {
 
-     document.getElementById("lost").innerHTML = "You Lost! The correct answer was"
-     document.getElementById("reveal-answer").innerHTML = ans;
+    console.log("player quit")
+    document.getElementById("lost").textContent = "You Lost! The correct answer was"
+    console.log(ans)
+    document.getElementById("reveal-answer").textContent = `${ans}`;
 
-     document.getElementById("total-wins").innerText = 0;
-
-     var rowCount = document.getElementsByClassName("guess");
-     var table = document.getElementById("user-guess");
+    document.getElementById("total-wins").innerText = 0;
 
  }
 
@@ -200,6 +198,7 @@ function newGame() {
     
     secondsTime = 0;
     minutesTime = 0;
+    attempt =0;
     var node = document.getElementsByTagName("tr");
     var count = node.length;
     var userInput =  document.getElementsByClassName("user-input");
